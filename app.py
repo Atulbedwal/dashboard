@@ -5,7 +5,7 @@ import json
 
 # Initialize the Dash app
 app = Dash(__name__)
-
+server = app.server
 # Load your JSON data
 with open('eve.json', 'r') as file:
     data = [json.loads(line) for line in file]
